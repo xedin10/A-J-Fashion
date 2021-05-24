@@ -1,0 +1,254 @@
+﻿body {
+    font-size: 24px;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    background-image: url("img/background3.jpg");
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    margin: 30px 0px;
+    font-size: 26px;
+}
+.submit
+{
+    font-weight:400;
+    margin: 30px 0;
+text-align:center;
+
+
+}
+
+input [type=submit],
+input [type=reset] 
+{
+    background-color: #efefef;
+    color: #666;
+    border: 2px solid #751b1b;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input[type=submit] {
+    width: 300px;
+    background-color: #b23e3e;
+    font-size: 20px;
+    color: white;
+    padding: 15px 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    outline: none;
+}
+
+input[type=reset] {
+    width: 300px;
+    background-color: #b23e3e;
+    font-size: 20px;
+    color: white;
+    padding: 15px 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    outline: none;
+}
+
+input[type=submit]:hover {
+    background-color: #c34f4f;
+}
+input[type=reset]:hover {
+    background-color: #c34f4f;
+}
+.row
+{
+        box-shadow: 0px 0px 10px 2px rgba(205,204,204,0.9);
+
+    padding:10px;
+   margin: 30px 100px;
+   float:left;
+  
+}
+
+.col
+{
+    display:inline-block;
+    margin:0 10px;
+
+
+}
+#wrapper
+{
+   
+    width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.header
+{
+    width:100%;
+    padding:20px 0;
+}
+
+.logo {
+    width: 700px;
+    font-size: 76px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    font-family: 'Redressed', cursive;
+}
+
+#zegar {
+    font-size: 36px;
+    float:right;
+    font-family: 'Redressed', cursive;
+}
+
+.nav {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #c34f4f;
+    border-top: 1px solid #751b1b;
+    border-bottom: 1px solid #751b1b;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+    .footer
+    {
+        text-align:center;
+        background-color:#222222;
+        padding:30px;
+
+    }
+    .sticky
+    
+    {
+        width:100%;
+        position:fixed;
+        left:0;
+        top:0;
+        z-index:100;
+    }
+
+ol {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 18px;
+    height: 35px;
+    line-height: 200%;
+    display: inline-block;
+}
+
+        ol a {
+            color: #ffffff;
+            text-decoration: none;
+            display: block;
+        }
+
+    ol>li
+    {
+        float:left;
+        width:150px;
+        height:40px;
+        border-right:1px solid #751b1b;
+    }
+
+        ol > li:first-child 
+        {
+            border-left: 1px solid #751b1b;
+        }
+
+        ol>li:hover
+        {
+            background-color:#cf6969;
+        }
+
+        ol>li:hover > a 
+        {
+            color:#451717;
+        }
+
+        ol>li>ul
+        {
+            list-style-type:none;
+            padding:0;
+            margin:0;
+            height:40px;
+            display:none;
+        }
+        ol>li:hover>ul
+        {
+            display:block;
+        }
+        ol>li>ul>li
+        {
+            background-color:#cf6969;
+            position:relative;
+            z-index:100;
+            border-top:1px solid #751b1b;
+        }
+
+            ol > li > ul > li:hover
+            {
+                background-color: #c34f4f;
+
+            }
+            ol > li > ul > li:hover >a
+            {
+                color:#451717;
+
+            }
+
+a.kaflink
+{
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 105px;
+    height: 142px;
+}
+
+a.kaflink2 
+{
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 105px;
+    height: 142px;
+}
+a.kaflink3
+{
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 105px;
+    height: 142px;
+}
+a.kaflink4
+{
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 105px;
+    height: 142px;
+}

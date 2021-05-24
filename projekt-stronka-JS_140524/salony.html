@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl" >
+<head>
+    <meta charset="utf-8" />
+    <title>A&J Fashion</title>
+    <meta name="description" content="Ekskluzywny sklep internetowy z modnymi ubraniami dla mężczyzny na każdą okazję" />
+    <meta name="keywords" content="ubrania,moda,moda męska" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="author" content="Jakub Stańko" />
+
+    <link rel="stylesheet" href="Style-obliczen.css" type="text/css" />
+    <link rel="stylesheet" href="css/fontello.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand:wght@600&family=Syncopate:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css" type="text/css" />
+    <script src="timer.js">
+
+    </script>
+    <script src="js/wykresy.js"></script>
+    <link rel="stylesheet" href="chartist/dist/chartist.min.css" />
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+
+<body onload="odliczanie();">
+
+
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo">
+                <img src="img/logo.png" width="110" height="110"
+                     style="float:left;" />
+                A&J Fashion
+
+                <div id="zegar">
+                    12:00:00
+
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+
+
+        </div>
+        <div class="nav">
+            <ol>
+                <li> <a href="HTMLPage1.html">Strona główna</a></li>
+                <li>
+                    <a href="#">Garnitury</a>
+                    <ul>
+                        <li><a href="#">Klasyczne</a></li>
+                        <li><a href="#">Wieczorowe</a></li>
+                        <li><a href="#">Ślubne</a></li>
+                        <li><a href="#">Smokingi</a></li>
+                        <li><a href="#">Studniówkowe</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Koszule</a>
+                    <ul>
+                        <li><a href="#">Klasyczne</a></li>
+                        <li><a href="#">Sportowe</a></li>
+                        <li><a href="#">Ślubne</a></li>
+                        <li><a href="#">Codzienne</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Polo</a>
+                    <ul>
+                        <li><a href="#">Krótki rękaw</a></li>
+                        <li><a href="#">Długi rękaw</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Spodnie</a>
+                    <ul>
+                        <li><a href="#">Eleganckie</a></li>
+                        <li><a href="#">Codzienne</a></li>
+                        <li><a href="#">Jeansy</a></li>
+                        <li><a href="#">Shorty</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Dodatki</a>
+                    <ul>
+                        <li><a href="#">Buty</a></li>
+                        <li><a href="#">Paski</a></li>
+                        <li><a href="#">Krawaty</a></li>
+                        <li><a href="#">Muszki</a></li>
+                        <li><a href="#">Skarpety</a></li>
+
+                    </ul>
+                </li>
+
+            </ol>
+        </div>
+        <div class="square-container">
+            <article>
+                <p class="witamy">
+                    Ładowanie cewki -stan nieustalony obwodu elektrycznego
+
+                </p>
+
+                <p class="zadanie">
+                    <b>Zadanie</b><br />
+                    W obwodzie jak na rys. 1 dla t ≤ 0 panował stan ustalony. W chwili t = 0 wyłącznik jest otwierany.<br /> Wyznaczyć przebieg napięcia u<sub class="subst">L</sub> i prądu i<sub class="subst">L</sub> na indukcyjnośći.
+                </p>
+                <div class="schemat">
+                    <img src="img/schemat.png" alt="Schemat" width="500">
+                    <p class="podpis"> Rys. 1. Schemat obwodu</p>
+                </div>
+
+                <div class="dane">
+                    <label class="etykieta" for="E">Podaj napięcie zasilania E [V]</label>
+                    <input type="number" id="E" value="100" /> &nbsp;
+
+                    <label class="etykieta" for="R1">Podaj rezystancję R<sub class="subst">1</sub> [Ω]</label>
+                    <input type="number" id="R" value="3000" /> &nbsp;
+
+                    <label class="etykieta" for="L">Podaj indukcyjność cewki [mH]</label>
+                    <input type="number" id="L" value="1000" /> &nbsp;
+
+                    <input class="przycisk" type="button" onclick="chart()" value="Oblicz i rysuj przebiegi" />
+
+                </div>
+
+
+                <div class="wykres1" id="chartContainer"></div>
+                <br />
+                <div class="wykres2" id="chartContainer1"></div>
+
+
+
+
+
+            </article>
+        </div>
+       
+
+        <div style="clear:both;"></div>
+
+        <div class="socials"></div>
+        <div class="socialdivs">
+            <div class="fb">
+                <i class="icon-facebook"> </i>
+            </div>
+            <div class="yt">
+
+                <i class="icon-youtube"> </i>
+            </div>
+            <div class="tw">
+
+                <i class="icon-twitter"> </i>
+            </div>
+            <div class="gplus">
+
+                <i class="icon-gplus"> </i>
+            </div>
+
+            <div style="clear:both"></div>
+
+        </div>
+    </div>
+    <div class="footer">
+        Jakub Stańko &copy; kompany ;2021
+    </div>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script>
+
+        $(document).ready(function() {
+        var NavY = $('.nav').offset().top;
+
+        var stickyNav = function(){
+        var ScrollY = $(window).scrollTop();
+
+        if (ScrollY > NavY) {
+        $('.nav').addClass('sticky');
+        } else {
+        $('.nav').removeClass('sticky');
+        }
+        };
+
+        stickyNav();
+
+        $(window).scroll(function() {
+        stickyNav();
+        });
+        });
+
+    </script>
+
+
+
+
+
+
+    <script src="chartist/dist/chartist.min.js"></script>
+
+
+
+
+
+</body>
+</html>

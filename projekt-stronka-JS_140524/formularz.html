@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl" >
+<head>
+    <meta charset="utf-8" />
+    <title>A&J Fashion</title>
+    <meta name="description" content="Ekskluzywny sklep internetowy z modnymi ubraniami dla mężczyzny na każdą okazję" />
+    <meta name="keywords" content="ubrania,moda,moda męska" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="author" content="Jakub Stańko" />
+
+    <link rel="stylesheet" href="Style-formularz.css" type="text/css" />
+    <link rel="stylesheet" href="css/fontello.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand:wght@600&family=Syncopate:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css" type="text/css" />
+    <script src="timer.js">
+
+    </script>
+
+</head>
+
+<body onload="odliczanie();">
+
+
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo">
+                <img src="img/logo.png" width="110" height="110"
+                     style="float:left;" />
+                A&J Fashion
+
+                <div id="zegar">
+                    12:00:00
+
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+
+
+        </div>
+        <div class="nav">
+            <ol>
+                <li> <a href="HTMLPage1.html">Strona główna</a></li>
+                <li>
+                    <a href="#">Garnitury</a>
+                    <ul>
+                        <li><a href="#">Klasyczne</a></li>
+                        <li><a href="#">Wieczorowe</a></li>
+                        <li><a href="#">Ślubne</a></li>
+                        <li><a href="#">Smokingi</a></li>
+                        <li><a href="#">Studniówkowe</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Koszule</a>
+                    <ul>
+                        <li><a href="#">Klasyczne</a></li>
+                        <li><a href="#">Sportowe</a></li>
+                        <li><a href="#">Ślubne</a></li>
+                        <li><a href="#">Codzienne</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Polo</a>
+                    <ul>
+                        <li><a href="#">Krótki rękaw</a></li>
+                        <li><a href="#">Długi rękaw</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Spodnie</a>
+                    <ul>
+                        <li><a href="#">Eleganckie</a></li>
+                        <li><a href="#">Codzienne</a></li>
+                        <li><a href="#">Jeansy</a></li>
+                        <li><a href="#">Shorty</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Dodatki</a>
+                    <ul>
+                        <li><a href="#">Buty</a></li>
+                        <li><a href="#">Paski</a></li>
+                        <li><a href="#">Krawaty</a></li>
+                        <li><a href="#">Muszki</a></li>
+                        <li><a href="#">Skarpety</a></li>
+
+                    </ul>
+                </li>
+
+            </ol>
+        </div>
+        <naglowek>
+            <h1>wybierz swój garnitur</h1>
+        </naglowek>
+
+        <main>
+            <article>
+                <div class="row">
+                    <form action="" method="post" enctype="text/plain">
+
+                            <legend>Wybierz twój rozmiar : </legend>
+                            <div class="col">
+
+                                <div> <label> <input type="radio" name="rozmiar">XS 88-92</label></div>
+                                <div> <label> <input type="radio" name="rozmiar">S 92-96</label></div>
+                                <div> <label> <input type="radio" name="rozmiar">M 96-104</label></div>
+                            </div>
+                            <div class="col">
+
+                                <div> <label> <input type="radio" name="rozmiar">L 104-108</label></div>
+                                <div> <label> <input type="radio" name="rozmiar">XL 108-116</label></div>
+                                <div> <label> <input type="radio" name="rozmiar">XXL 116-124</label></div>
+                            </div>
+                </div>
+                <div class="row">
+                    <label for="styl">
+
+                        Styl garnituru :
+                    </label>
+                    <div style="margin-top:10px">
+                        <select id="styl" name="styl" multiple size="6">
+
+                            <option selected> Klasyczny</option>
+                            <option>Wieczorowy</option>
+                            <option>Codzienny</option>
+                            <option>Ślubny</option>
+                            <option>Smoking</option>
+                            <option>Studniówkowy</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+
+                        <legend>Dodatki do ubioru</legend>
+
+                        <div class="col">
+                            <div><label><input type="checkbox" checked> skarpety</label></div>
+                            <div><label><input type="checkbox">  muszki</label></div>
+                            <div><label><input type="checkbox" checked>paski</label></div>
+                        </div>
+
+                        <div class="col">
+                            <div><label><input type="checkbox">  krawaty</label></div>
+                            <div><label><input type="checkbox">  buty</label></div>
+                            <div><label><input type="checkbox" disabled checked>  zapinki</label></div>
+                        </div>
+
+                </div>
+                <div style="clear:both;"></div>
+
+                <div class="row">
+
+                    <label>  Imię    <input type="text" placeholder="Jak masz na imię?" onfocus="this.placeholder=''"></label>
+                    <label> Nazwisko <input type="text" placeholder="jakie masz nazwisko?"onfocus="this.placeholder=''">  </label>
+
+                    <label> Login <input type="text" placeholder="login lub e-mail"onfocus="this.placeholder=''">  </label>
+                    <label> Hasło <input type="password">  </label>
+
+
+
+                </div>
+                <div style="clear:both;"></div>
+
+                <div class="row">
+                    <label> Szukaj <input type="search">  </label>
+
+                    <label> Podaj swój wiek <input type="number" step="1" placeholder="wyjątek literka e"onfocus="this.placeholder=''"></label>
+
+                </div>
+                <div style="clear:both;"></div>
+
+                <div class="submit">
+                    <input type="submit" value="Wyślij formularz!">
+                    <input type="reset" value="Wyczyść!">
+
+                </div>
+                <div style="clear:both;"></div>
+
+
+                </form>
+
+            </article>
+
+
+
+
+        </main>
+		
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="footer">
+        Jakub Stańko &copy; 140524 ;2021
+    </div>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script>
+
+        $(document).ready(function() {
+        var NavY = $('.nav').offset().top;
+
+        var stickyNav = function(){
+        var ScrollY = $(window).scrollTop();
+
+        if (ScrollY > NavY) {
+        $('.nav').addClass('sticky');
+        } else {
+        $('.nav').removeClass('sticky');
+        }
+        };
+
+        stickyNav();
+
+        $(window).scroll(function() {
+        stickyNav();
+        });
+        });
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

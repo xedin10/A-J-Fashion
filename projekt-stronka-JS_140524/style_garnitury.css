@@ -1,0 +1,409 @@
+﻿body {
+    background-color: black;
+    font-size: 24px;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    margin:0; !important;
+}
+
+#wrapper
+{
+   
+    width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.header
+{
+    width:100%;
+    padding:20px 0;
+}
+
+.logo {
+    width: 700px;
+    font-size: 76px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    font-family: 'Redressed', cursive;
+}
+
+#zegar {
+    font-size: 36px;
+    float:right;
+    font-family: 'Redressed', cursive;
+}
+
+.nav {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #c34f4f;
+    border-top: 1px solid #751b1b;
+    border-bottom: 1px solid #751b1b;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #fff;
+}
+
+a:hover {
+    color: #fff;
+}
+
+a:active {
+    color: #fff;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.postcard {
+    display: inline-block;
+    width: 460px;
+    text-align: center;
+    padding: 5px;
+}
+
+    .postcard p {
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+h1 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #c34f4f;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+
+
+.photo1 {
+    width: 450px;
+    height: 278px;
+    overflow: hidden;
+    background-s
+}
+
+    .photo1 img {
+        transition: all 0.5s ease-in-out;
+    }
+
+    .photo1:hover img {
+        -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+        transform: scale(1.15);
+    }
+
+.photo2 {
+    width: 450px;
+    height: 278px;
+    overflow: hidden;
+}
+
+    .photo2 img {
+        transition: all 0.5s ease-in-out;
+    }
+
+    .photo2:hover img {
+        -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+        transform: scale(1.15);
+    }
+.photo3 {
+    width: 450px;
+}
+
+.overlay {
+    position: relative;
+    width: 450px;
+    height: 278px;
+   opacity:0.5;
+}
+
+    .overlay .link {
+        position: absolute;
+        display: block;
+        width: 450px;
+        height: 100px;
+        background-color: #111;
+        left: 0px;
+        bottom: 0px;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .overlay:hover .link {
+        opacity: 0.8;
+    }
+
+.photo4 {
+    width: 450px;
+}
+
+.overlayT {
+    position: relative;
+    width: 450px;
+    height: 278px;
+}
+
+    .overlayT .link {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #27a38d;
+        left: 0px;
+        top: 0px;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .overlayT:hover .link {
+        opacity: 0.9;
+    }
+
+.icon {
+    display: block;
+    top: 25%;
+    position: relative;
+    font-size: 72px;
+}
+
+    .icon p {
+        font-size: 20px;
+    }
+
+.photo5 {
+    width: 450px;
+    height: 278px;
+    overflow: hidden;
+}
+
+    .photo5 img {
+        transition: all 0.5s ease-in-out;
+    }
+
+    .photo5:hover img {
+        -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+        transform: scale(1.15);
+    }
+
+.photo6 {
+    width: 450px;
+    height: 278px;
+    overflow: hidden;
+}
+
+    .photo6 img {
+        transition: all 0.7s ease-in-out;
+    }
+
+    .photo6:hover img {
+        -webkit-transform: scale(1.2) ;
+        -ms-transform: scale(1.2) ;
+        transform: scale(1.2) ;
+    }
+
+
+
+    .socials
+{
+        margin-top:20px;
+    width:100%;
+    text-align:center;
+    background-color:#292929;
+}
+.socialdivs
+{
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+.fb {
+    width: 250px;
+    height: 155px;
+    float: left;
+    text-align: center;
+}
+.fb:hover
+{
+    background-color:#4668b3;
+
+}
+
+.yt {
+    width: 250px;
+    height: 155px;
+    float: left;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.yt:hover
+{
+    background-color:#d94348;
+}
+.tw {
+    width: 250px;
+    height: 155px;
+    float: left;
+    text-align: center;
+}
+
+    .tw:hover {
+        background-color: #3095d3;
+    }
+.gplus {
+    width: 250px;
+    height: 155px;
+    float: left;
+    text-align:center;
+}
+
+    .gplus:hover {
+        background-color: #d95333;
+    }
+
+    .footer
+    {
+        text-align:center;
+        background-color:#222222;
+        padding:30px;
+
+    }
+    .sticky
+    
+    {
+        width:100%;
+        position:fixed;
+        left:0;
+        top:0;
+        z-index:100;
+    }
+
+ol {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 18px;
+    height: 35px;
+    line-height: 200%;
+    display: inline-block;
+}
+
+        ol a {
+            color: #ffffff;
+            text-decoration: none;
+            display: block;
+        }
+
+    ol>li
+    {
+        float:left;
+        width:150px;
+        height:40px;
+        border-right:1px solid #751b1b;
+    }
+
+        ol > li:first-child 
+        {
+            border-left: 1px solid #751b1b;
+        }
+
+        ol>li:hover
+        {
+            background-color:#cf6969;
+        }
+
+        ol>li:hover > a 
+        {
+            color:#451717;
+        }
+
+        ol>li>ul
+        {
+            list-style-type:none;
+            padding:0;
+            margin:0;
+            height:40px;
+            display:none;
+        }
+        ol>li:hover>ul
+        {
+            display:block;
+        }
+        ol>li>ul>li
+        {
+            background-color:#cf6969;
+            position:relative;
+            z-index:100;
+            border-top:1px solid #751b1b;
+        }
+
+            ol > li > ul > li:hover
+            {
+                background-color: #c34f4f;
+
+            }
+            ol > li > ul > li:hover >a
+            {
+                color:#451717;
+
+            }
+
+a.kaflink
+{
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 105px;
+    height: 142px;
+}
+
+a.kaflink2 
+{
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 105px;
+    height: 142px;
+}
+a.kaflink3
+{
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 105px;
+    height: 142px;
+}
+a.kaflink4
+{
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 105px;
+    height: 142px;
+}
